@@ -1,0 +1,59 @@
+/* Minimal global styles - A11yAll V2 */
+:root {
+  /* Force dark color scheme to prevent browser defaults */
+  color-scheme: dark;
+  
+  /* Enhanced font rendering for better cross-platform compatibility */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Improved font rendering for Linux systems */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Force dark background to prevent flashes */
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+/* Reset default styles that might interfere */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* Ensure consistent dark background */
+  background-color: #0d1117;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Prevent any browser default styling from interfering */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Remove any default link styling that might interfere */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
